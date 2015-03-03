@@ -4,7 +4,7 @@
     id        = "com.phonegap.CalculadoraImbeciles"
     version   = "1.0.0">
 	
-<icon src="imgs/calc.png" />
+<icon src="imgs/calc.jpg" />
 <name>Calculadora</name>
 
 <description>
