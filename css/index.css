@@ -15,7 +15,6 @@ font-size: 18px;
 font-family: trebuchet, verdana, arial;
 font-weight: bold;
 resize:none;
-color:#FFF;
 }
 
 
@@ -29,8 +28,8 @@ border: 0;
 background: #FFFFFF;
 border: 0;
 }
-h1{ color:#FFF; font-size:8px; }
-h6{ color:#FFF; }
+h1{ color:#333; }
+h6{ color:#666; }
 
 .ui-btn-active 
 {
