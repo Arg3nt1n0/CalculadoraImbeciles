@@ -1,23 +1,24 @@
-document.addEventListener("deviceready", function()
+$(function()
 {
-	capturador = navigator.device.capture;
-}, false);
-
-function CapturarAudio()
-{
-	capturador.captureAudio(capturaOK, capturaError);
-}
-
-function capturaError()
-{
-	alert("Error al capturar");
-}
-
-function capturaOK(archivos)
-{
-	for(var i=0; i<archivos.length; i++)
+	$("#calculadora tr td").click(function()
 	{
-		var ruta = archivos[i].fullPath;
-		$("#resultado_calculadora").append(ruta.text());
-	}
-}
+		if ($(this).text() != "C" && $(this).text() != "=")
+		{
+			$("#resultado_calculadora").append($(this).text());
+		}
+		if ($(this).text() == "=")
+		{
+			operacion = $("#resultado_calculadora").text().split("");
+			total = "";
+			for ( var index in operacion)
+			{
+				total = total + operacion[index];
+			}
+			$("#resultado_calculadora").text(eval(total));
+		}
+		if($(this).text() == "C")
+		{
+			$("#resultado_calculadora").text("");
+		}
+	});
+});
