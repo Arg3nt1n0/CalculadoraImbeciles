@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.phonegap.VoiveCalculator"
+    id        = "com.phonegap.CalculadoraImbeciles"
     version   = "1.0.0">
 	
 <icon src="imgs/calc.png" />
-<name>Voice Calculator</name>
+<name>Calculadora</name>
 
 <description>
 Calculadora Básica guiada por voz.
 </description>
 
-<author href="clubsolaris.com/Apps" email="gowpga@hotmail.com">
+<author href="random" email="random@hotmail.com">
 Jonathan Argumedo
 </author>
-
-<gap:plugin name="org.apache.cordova.media-capture" />
 
 </widget>
